@@ -89,7 +89,7 @@ nmap ga <Plug>(EasyAlign)
 
 " CTRLP
 let g:ctrlp_working_path_mode = 0
-let g:ctrlp_custom_ignore = 'node_modules\|tmp\|coverage\|_build\|deps'
+let g:ctrlp_custom_ignore = 'node_modules\|tmp\|coverage\|_build\|deps\|vendor'
 
 " Airline
 set laststatus=2
