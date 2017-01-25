@@ -19,6 +19,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'ngmy/vim-rubocop'
 
 " Ruby on Rails
 Plugin 'tpope/vim-endwise'
@@ -96,5 +98,9 @@ set laststatus=2
 
 " JSX
 let g:jsx_ext_required = 0
+
+" Syntastic
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_ruby_checkers = ['rubocop']
 
 colorscheme dracula
