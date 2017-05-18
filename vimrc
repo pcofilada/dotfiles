@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Color Schemes
 Plugin 'dracula/vim'
+Plugin 'tomasr/molokai'
 
 " Utilities
 Plugin 'scrooloose/nerdtree'
@@ -36,6 +37,7 @@ Plugin 'slim-template/vim-slim.git'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'ap/vim-css-color'
 
 " Git
 Plugin 'tpope/vim-fugitive'
@@ -103,4 +105,4 @@ let g:jsx_ext_required = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_ruby_checkers = ['rubocop']
 
-colorscheme dracula
+colorscheme molokai
