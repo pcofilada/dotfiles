@@ -74,6 +74,7 @@ set incsearch
 set hlsearch
 set backspace=indent,eol,start
 set noswapfile
+set colorcolumn=80
 
 " Easy splitted window navigation
 noremap <C-h>  <C-w>h
@@ -104,5 +105,6 @@ let g:jsx_ext_required = 0
 " Syntastic
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_scss_checkers = ['stylelint']
 
 colorscheme molokai
