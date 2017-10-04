@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Color Schemes
 Plugin 'dracula/vim'
 Plugin 'tomasr/molokai'
+Plugin 'gertjanreynaert/cobalt2-vim-theme'
 
 " Utilities
 Plugin 'scrooloose/nerdtree'
@@ -95,6 +96,7 @@ nmap ga <Plug>(EasyAlign)
 " CTRLP
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = 'node_modules\|tmp\|coverage\|_build\|deps\|vendor'
+let g:ctrlp_show_hidden = 1
 
 " Airline
 set laststatus=2
@@ -107,4 +109,4 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_scss_checkers = ['stylelint']
 
-colorscheme molokai
+colorscheme cobalt2
