@@ -5,3 +5,6 @@ set fish_greeting
 for f in ~/.config/fish/config.d/*.fish
   source $f
 end
+
+export YARN=(yarn global bin)
+export PATH="$YARN:$PATH"
