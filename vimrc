@@ -10,7 +10,6 @@ Plugin 'VundleVim/Vundle.vim'
 " Color Schemes
 Plugin 'dracula/vim'
 Plugin 'tomasr/molokai'
-Plugin 'gertjanreynaert/cobalt2-vim-theme'
 
 " Utilities
 Plugin 'scrooloose/nerdtree'
@@ -23,6 +22,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'ngmy/vim-rubocop'
+Plugin 'wikitopian/hardmode'
 
 " Ruby on Rails
 Plugin 'tpope/vim-endwise'
@@ -52,6 +52,7 @@ command! W :w
 let mapleader = "\\"
 set mouse=ia
 
+set shell=/bin/bash
 set encoding=utf-8
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 set switchbuf=useopen
@@ -76,6 +77,7 @@ set hlsearch
 set backspace=indent,eol,start
 set noswapfile
 set colorcolumn=80
+set number
 
 " Easy splitted window navigation
 noremap <C-h>  <C-w>h
@@ -109,4 +111,10 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_ruby_checkers = ['rubocop']
 let g:syntastic_scss_checkers = ['stylelint']
 
-colorscheme cobalt2
+" CSS Color
+let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+" HardMode
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+
+colorscheme molokai

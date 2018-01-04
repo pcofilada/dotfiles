@@ -8,3 +8,4 @@ end
 
 export YARN=(yarn global bin)
 export PATH="$YARN:$PATH"
+export TERM=xterm-256color
